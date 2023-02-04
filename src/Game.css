@@ -1,0 +1,120 @@
+:root{
+    --board-background-color : #B9FFF8;
+    --board-border-color:#FF9551;
+    --body-background-color: #820094;
+    --panel-backgorund-color:bisque;
+    --panel-boder-color:#FF9551;
+    --footer-button:#1CD6CE;
+    --footer-button-border:#293462;
+    --game-circle:rgb(107, 101, 101);
+
+    --player-zero:white;
+    --player-one:#D61C4E;
+    --player-two:#FEDB39;
+}
+
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 30px;
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 25%;
+    background-color: var(--board-background-color);
+    border: solid var(--board-border-color) 8px;
+    border-radius: 10%;
+    -webkit-box-shadow: 7px 5px 15px 3px rgb(0, 0, 0, 0.9);
+    box-shadow: 7px 5px 15px 3px rgb(0, 0, 0, 0.9);
+}
+
+body{
+    background-color: var(--body-background-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.app-container{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    margin-left: -400px;
+}
+.panel {
+    position: absolute;
+    background-color: var(--panel-backgorund-color);
+    border: 8px solid var(--panel-boder-color);
+    -webkit-box-shadow: 7px 5px 15px 3px rgb(0, 0, 0, 0.9);
+    box-shadow: 7px 5px 15px 3px rgb(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.footer{
+    left: 50%;
+    top: 750px;
+    width: 300px;
+    height: 80px;
+    margin-left: -120px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer button{
+    position: relative;
+    left: 50%;
+    top: 20px;
+    margin-left: -30px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--footer-button);
+    font-size: 15px;
+    -webkit-box-shadow: 7px 5px 15px 3px rgb(0, 0, 0, 0.9);
+    box-shadow: 7px 5px 15px 3px rgb(0, 0, 0, 0.9);
+    border: 5px solid var(--footer-button-border);
+    font-weight: bold;
+
+
+}
+
+.header {
+    width: 300px;
+    height: 80px;
+    left: 50%;
+    top: 140px;
+    margin-left: -120px;
+}
+
+.header-text{
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform:translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.gameCircle {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 5px solid var(--game-circle);
+}
+
+.Player0 {
+    background-color: var(--player-zero);
+}
+
+.Player1 {
+    background-color: var(--player-one);
+}
+
+.Player2 {
+    background-color: var(--player-two);
+
+}
